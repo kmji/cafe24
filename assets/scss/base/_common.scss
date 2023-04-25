@@ -1,0 +1,51 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+//  .sc3
+.swiper-nav{
+    .swiper-btn{
+        background-image: url(../images/icon/arrow-sprites.png);
+        background-size: 160px 160px;
+        background-repeat: no-repeat;
+    }
+ }
+
+ // .sc6
+.sp2{
+    background-image: url(../images/spr-icon.png);
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+}
+
+.sc6 .ico-star{
+    background-image: url(../images/ico-sec6.png);
+    background-size: 37px 38px;
+    background-repeat: no-repeat;
+}
+
+@keyframes ItemUp {
+    0%{
+        opacity: 0;
+        transform: translate(0, 50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes TextUp {
+    0%{
+        opacity: 0;
+        transform: translate(0, 50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
