@@ -1,38 +1,29 @@
-/*반응형 화면 크기*/
 $mobile1: 320px;
 $mobile: 767px;
 $tablet: 1024px;
 $desktop1: 1170px;
 $desktop: 1300px;
 
-/*반응형, 브라우저 크기가 320px 이하일때*/
 @mixin mobile1{
   @media (max-width: $mobile1){
     @content;
   }
 }
-/*반응형, 브라우저 크기가 767px 이하일때*/
 @mixin mobile{
   @media (max-width: $mobile){
     @content;
   }
 }
-
-/*반응형, 브라우저 크기가 1024px 이하일때*/
 @mixin tablet{
   @media (max-width: $tablet){
     @content;
   }
 }
-
-/*반응형, 브라우저 크기가 1170px 이하일때*/
 @mixin desktop1{
     @media (max-width: $desktop1){
       @content;
     }
 }
- 
-/*반응형, 브라우저 크기가 1300px 이상일때*/
 @mixin desktop{
     @media (max-width: $desktop){
       @content;

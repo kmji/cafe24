@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* ROOT */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 :root {
@@ -6,17 +6,13 @@
   --font-en:"Roboto", sans-serif;
 }
 
-/*반응형 화면 크기*/
-/*반응형, 브라우저 크기가 320px 이하일때*/
-/*반응형, 브라우저 크기가 767px 이하일때*/
-/*반응형, 브라우저 크기가 1024px 이하일때*/
-/*반응형, 브라우저 크기가 1170px 이하일때*/
-/*반응형, 브라우저 크기가 1300px 이상일때*/
+/* FONT */
 * {
   font-style: normal;
   font-family: "Noto Sans KR", sans-serif;
 }
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -72,6 +68,7 @@ table {
   border-spacing: 0;
 }
 
+/* COMMON */
 .blind {
   position: absolute;
   width: 1px;
@@ -236,6 +233,7 @@ body.pop header .pagination span {
   margin: 0 auto;
 }
 
+/* HEADER */
 header {
   position: fixed;
   top: 0;
@@ -728,6 +726,7 @@ header .mo-menu::before {
   }
 }
 
+/* NAVIGATION */
 nav {
   display: inline-block;
   vertical-align: top;
@@ -862,6 +861,7 @@ nav .menu-item .sub-item a {
   }
 }
 
+/* FOOTER */
 footer {
   position: relative;
   border-top: 1px solid #e9e9e9;
@@ -1079,6 +1079,7 @@ main {
   width: 100%;
 }
 
+/* SC-VISUAL */
 .visualSwiper {
   position: relative;
   height: 700px;
@@ -1538,6 +1539,7 @@ main {
   fill: transparent;
 }
 
+/* SC2 */
 .sc2Swiper {
   max-width: 1242px;
   margin: 173px auto 0;
@@ -2032,6 +2034,7 @@ main {
   background: #333;
 }
 
+/* SC3 */
 .sc3 {
   position: relative;
   padding: 220px 0 160px;
@@ -2354,6 +2357,7 @@ main {
   background-position: -80px 0;
 }
 
+/* SC4 */
 .sc4 {
   overflow: hidden;
   position: relative;
@@ -2548,6 +2552,7 @@ main {
   }
 }
 
+/* SC5 */
 .sc5 {
   padding: 92px 0 92px;
   height: 960px;
@@ -2808,6 +2813,7 @@ main {
   }
 }
 
+/* SC6 */
 .sc6 {
   background: #f8f8f8;
 }
@@ -3290,6 +3296,7 @@ main {
   display: block !important;
 }
 
+/* SC7 */
 .sc7 {
   padding: 200px 0;
 }
@@ -3577,6 +3584,7 @@ main {
   }
 }
 
+/* SC8 */
 .sc8 {
   background: #f8f8f8;
   padding: 160px 0 100px;
@@ -3971,6 +3979,7 @@ main {
   background: #333;
 }
 
+/* SC9 */
 .sc9 {
   padding: 160px 0;
   text-align: center;
@@ -4088,6 +4097,7 @@ main {
   background-position: -7px -50px;
 }
 
+/* SC10 */
 .sc10 {
   height: 700px;
   background: url(../images/bg-sec10.jpg);

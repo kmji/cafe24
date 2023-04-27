@@ -1,4 +1,5 @@
 $(function(){
+    /* HEADER-POP */
     var popSwiper = new Swiper(".popSwiper", {
         loop:true,
         autoplay:{
@@ -15,14 +16,13 @@ $(function(){
         $('body').removeClass('pop');
     })
 
-    //메뉴 노출
+    /* MENU-WRAP */
     $('.menu-wrap .menu-item').mouseenter(function(){
         $(this).children('.sub-list').addClass('active');
     })
     $('.menu-wrap .menu-item').mouseleave(function(){
         $(this).children('.sub-list').removeClass('active');
     })
-    //모바일 메뉴 노출
     $('.mo-menu').click(function(){
         $('.menu-wrap').addClass('active');
     })
@@ -34,11 +34,12 @@ $(function(){
         $(this).toggleClass('active');
     })
 
-    //언어선택
+    /* FAV */
     $('.lang-btn').click(function(){
         $('.language-area').toggleClass('active');
     })
 
+    /* SC-VISUAL */
     const progressCircle = document.querySelector(".ui-pieChart svg");
 
     var visualSwiper = new Swiper(".visualSwiper", {
@@ -60,7 +61,7 @@ $(function(){
         }
     });
 
-    //sc2
+    /* SC2 */
     var sc2Swiper = new Swiper(".sc2Swiper", {
         effect:"fade",
         autoplay: {    
@@ -75,7 +76,7 @@ $(function(){
         
     });
 
-    //sc3
+    /* SC3 */
     var sc3Swiper = new Swiper(".sc3Swiper", {
         slidesPerView: "auto",
         spaceBetween: 200,
@@ -122,23 +123,7 @@ $(function(){
         }
     });
 
-
-    //sc4
-    gsap.to("#rect", {
-        duration: 5, 
-        repeat: 12,
-        repeatDelay: 3,
-        yoyo: true,
-        ease: "power1.inOut",
-        motionPath:{
-            path: "#path",
-            align: "#path",
-            autoRotate: true,
-            alignOrigin: [0.5, 0.9]
-        }
-    });
-
-    //숫자 카운트
+    /* SC4 */
     function numberCounter(target_frame, target_number) {
         this.count = 0; this.diff = 0;
         this.target_count = parseInt(target_number);
@@ -176,6 +161,7 @@ $(function(){
         sc7 = $('.sc7').offset().top;
         ft = $('footer').offset().top;
 
+        /* SC3 */    
         if(curr >= (sc3 - 150)){
             if(sc3Flag == 0){
                 $('.sc3 .title').addClass('on');
@@ -183,7 +169,7 @@ $(function(){
             }
         }
 
-
+        /* SC4 */
         if(curr >= (sc4 - 150)){
             if(numberFlag == 0){
                 $('.sc4 .inner').addClass('on');
@@ -195,7 +181,7 @@ $(function(){
             }
         } 
         
-        //top버튼
+        /* TOP BTN */
         $('.quick').click(function(e){
             e.preventDefault();
             window.scrollTo({top:0,behavior:"smooth"})
@@ -215,8 +201,8 @@ $(function(){
 
         lastScroll = curr;
     })
-    //sc6
-
+    
+    /* SC6 */
     menuArr = ['통합관리' ,'상품관리' ,'주문관리' ,'재고관리' ,'업무효율' ,'쉬운입점' ,'해외배송' ,'카테고리']
     icoArr = ['all' ,'item' ,'order' ,'inventory' ,'work' ,'store' ,'overseas' ,'category']
 
@@ -239,7 +225,7 @@ $(function(){
         },
     });
 
-    //sc7
+    /* SC7 */
     document.querySelectorAll('.sc7 .right-wrap .sticky').forEach(element => {
         target = element.dataset.target;
         
@@ -254,7 +240,7 @@ $(function(){
     });
 
 
-    //sc8
+    /* SC8 */
     var sc8Swiper = new Swiper(".sc8Swiper", {
         effect:"fade",
         loop:true,
@@ -264,7 +250,7 @@ $(function(){
         }
     });
 
-    //footer
+    /* FOOTER */
     $('.family-btn').click(function(e){
         e.preventDefault();
         $(this).toggleClass('active');
